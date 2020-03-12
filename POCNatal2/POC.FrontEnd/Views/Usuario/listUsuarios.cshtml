@@ -1,0 +1,11 @@
+﻿
+@section scripts{
+    
+    <script src="~/scripts/Usuario/configurations.js"></script>
+    <script src="~/scripts/Usuario/modalMixin.js"></script>
+    <script src="~/scripts/Usuario/listBinding.js"></script>
+}
+<div id="userTemplate" v-cloak>
+    @await Html.PartialAsync("~/Views/Usuario/_Grid.cshtml")
+</div>
+

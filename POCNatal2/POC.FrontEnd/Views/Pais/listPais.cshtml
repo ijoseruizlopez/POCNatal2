@@ -1,0 +1,27 @@
+﻿
+@section Scripts{
+    <script src="~/scripts/Common/endpoints.js"></script>
+    <script src="~/scripts/Pais/configurations.js"></script>
+    <script src="~/scripts/Pais/modalMixin.js"></script>
+    <script src="~/scripts/Pais/crudMixin.js"></script>
+    <script src="~/scripts/Pais/tableMixin.js"></script>
+    <script src="~/scripts/Pais/listBinding.js"></script>
+}
+
+<br />
+
+<div id="paisTemplate">
+    <div class="container">
+        <div class="container">
+            @await Html.PartialAsync("~/Views/Common/_gridTemplate.cshtml")
+
+            <nf-modal ref="modal">
+                @await Html.PartialAsync("~/Views/Pais/_formPais.cshtml")
+            </nf-modal>
+
+            <nf-modal ref="detailModal">
+                @await Html.PartialAsync("~/Views/Pais/_detailPais.cshtml")
+            </nf-modal>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+﻿
+
+<div id="menu" class="padding">
+    <div class="row">
+        <nf-menu class="navbar-secondary"
+                 v-bind:items="items"
+                 v-bind:has-favorites="hasFavorites"
+                 v-bind:favorites.sync="favorites"
+                 v-bind:logo="logo"
+                 v-bind:notifications="notifications"
+                 v-bind:on-click-notification="onClickNotification">
+        </nf-menu>
+    </div>
+</div>

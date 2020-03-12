@@ -1,0 +1,35 @@
+﻿
+<div class="container" id="TransactionServiceFail" v-cloak>
+    <nf-modal ref="modal" class="padding" id="service-fail" v-on:nf-modal-closed="Closed">
+        <span slot="title"></span>
+        <div slot="body">
+            <section id="TransactionServiceFail_1">
+
+                <div class="row" id="TransactionServiceFail_2">
+                    <div class="col-md-12 col-md-sm-12 text-center text-danger" id="service-fail-title">
+                        <h2 class="text-danger" id="service-fail-h2">No podemos procesar su pedido</h2>
+                    </div>
+                </div>
+                <div class="row margin-bottom" id="service-fail-message-row">
+                    <div class="col-md-12 col-md-sm-12 text-center" id="service-fail-message-col">
+
+                        <p class="text-gray-dark" id="service-fail-message-p">
+                            Por favor le pedimos que vuelva a intentar.<br />
+                            O póngase en contacto con nosotros asi podemos ayudarlo.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row" id="service-fail-btn-row">
+                    <div class="col-md-3 col-md-offset-3" id="service-fail-btn-col-1">
+                        <button id="recharge" class="btn btn-primary-outline btn-block" v-on:click="VolverAIntentar()">Volver a intentar</button>
+                    </div>
+                    <div class="col-md-3" id="service-fail-btn-col-2">
+                        <button id="service-fail-btn-write" class="btn btn-primary btn-block" v-on:click="WriteUs()">Contáctanos</button>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </nf-modal>
+</div>

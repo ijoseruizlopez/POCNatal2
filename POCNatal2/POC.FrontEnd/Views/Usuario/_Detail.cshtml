@@ -1,0 +1,22 @@
+﻿
+  <span slot="title">Detalle Usuario </span>
+  <div slot="body">
+    <dl class="dl-horizontal dl-zebra">
+      <dt>Nombre:</dt>
+      <dd>{{ modal.Nombre }}</dd>
+      <dt>Pais:</dt>
+      <dd>{{ modal.Ciudad.Provincia.Pais.Nombre }}</dd>
+      <dt>Provincia:</dt>
+      <dd>{{ modal.Ciudad.Provincia.Nombre }}</dd>
+      <dt>Ciudad:</dt>
+      <dd>{{ modal.Ciudad.Nombre }}</dd>
+
+    </dl>
+  </div>
+  <div slot="footer">
+    <button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+  </div>
+
+
+
+

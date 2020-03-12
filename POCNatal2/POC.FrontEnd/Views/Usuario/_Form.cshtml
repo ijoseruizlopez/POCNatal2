@@ -1,0 +1,47 @@
+﻿<span slot="title">Usuario</span>
+<div slot="body">
+    <form id="modalForm" v-validation v-on:submit.prevent="SaveForm" >
+        <div class="form-group">
+            <label for="">Nombre</label>
+            <input type="text"
+                   class="form-control"
+                   name="name"
+                   v-model="modal.Nombre"
+                   data-fv-notempty="true"
+                   data-fv-notempty-message="Debe elegir un Nombre" />
+        </div>
+        <div class="form-group">
+            <label for="pais">Pais</label>
+            <nf-autocomplete name="pais"
+                             v-model="selectedPais"
+                             v-bind:source="paisSource"
+                             v-bind:minimum-input-length="0"
+                             data-fv-notempty="true"
+                             data-fv-notempty-message="Debe seleccionar al menos un pais."
+                             ></nf-autocomplete>
+        </div>
+        <div class="form-group">
+            <label for="provincia">Provincia</label>
+            <nf-autocomplete name="provincia"
+                             v-model="selectedProvince"
+                             v-bind:source="provinciaSource"
+                             v-bind:minimum-input-length="0" 
+                             data-fv-notempty="true"
+                             data-fv-notempty-message="Debe seleccionar al menos una provincia."></nf-autocomplete>
+
+        </div>
+        <div class="form-group">
+            <label for="localidad">Localidad</label>
+            <nf-autocomplete name="localidad"
+                             v-model="selectedLocality"
+                             v-bind:source="localidadSource"
+                             v-bind:minimum-input-length="0"
+                             data-fv-notempty="true"
+                             data-fv-notempty-message="Debe seleccionar al menos una localidad."></nf-autocomplete>
+        </div>
+    </form>
+</div>
+<div slot="footer">
+    <button type="button" v-on:click="SaveForm" class="btn btn-primary">Guardar</button>
+    <button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+</div>

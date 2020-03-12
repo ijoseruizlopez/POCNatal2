@@ -1,0 +1,39 @@
+﻿<span slot="title">Ciudad</span>
+<div slot="body">
+    <form id="modalForm" v-validation v-on:submit.prevent="formSubmit">
+        <div class="form-group">
+            <label for="">Nombre</label>
+            <input type="text"
+                   class="form-control"
+                   name="name"
+                   v-model="modal.Nombre"
+                   data-fv-notempty="true"
+                   data-fv-notempty-message="Debe ingresar el campo 'Nombre'" />
+        </div>
+        <div class="form-group">
+            <label for="pais">Pais</label>
+            <nf-autocomplete name="pais"
+                             v-model="selectedPais"
+                             v-bind:source="paisSource"
+                             v-bind:minimum-input-length="0"
+                             data-fv-callback="true"
+                             data-fv-callback-message="Debe seleccionar al menos un Pais."
+                             data-fv-callback-callback="checkPaisSelected"></nf-autocomplete>
+        </div>
+        <div class="form-group">
+            <label for="provincia">Provincia</label>
+            <nf-autocomplete name="provincia"
+                             v-model="selectedProvince"
+                             v-bind:source="provinciaSource"
+                             v-bind:minimum-input-length="0"
+                             data-fv-callback="true"
+                             data-fv-callback-message="Debe seleccionar al menos una Provincia."
+                             data-fv-callback-callback="checkProvinceSelected"></nf-autocomplete>
+
+        </div>
+    </form>
+</div>
+<div slot="footer">
+    <button type="button" v-on:click="formSubmit()" class="btn btn-primary">Guardar</button>
+    <button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+</div>

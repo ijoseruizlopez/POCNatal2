@@ -1,0 +1,28 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <nf-table id="myTable"
+                  v-bind:data="data"
+                  v-bind:mode="mode"
+                  v-bind:columns="configColumns"
+                  v-bind:select="select"
+                  v-bind:responsive="responsive"
+                  v-on:created-row="createdRow"
+                  v-on:selected-row="selectedRow"
+                  ref="ABMtable"
+                  v-on:unselected-row="selectedRow">
+            <div slot="toolbar">
+                @await Html.PartialAsync("~/Views/Common/_BotoneraTable.cshtml")
+            </div>
+        </nf-table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="label-references">
+            <small>Referencias</small>
+            <span class="label label-success">40 - 60%</span>
+            <span class="label label-warning">60 - 80%</span>
+            <span class="label label-danger">80 - 100%</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,3 @@
+{"id":1,"title":"Grupo 1","items":[{"id":122,"name":"Lista de Menú Items","link":"http://localhost:8080/MenuItemList","isFavorite":true,"prefix":""},{"id":123,"name":"Item G 1.2","link":"http://localhost:8080/UserList","isFavorite":false,"prefix":""}]}
+{"id":2,"title":"Grupo 1","items":[{"id":125,"name":"Item G 1.1","link":"http://localhost:8080/UserList","isFavorite":false,"prefix":"fix_004"}]}
+{"id":3,"title":"Grupo 2","items":[{"id":126,"name":"Item G 2.1","link":"http://localhost:8080/UserList","isFavorite":false,"prefix":"fix_002"},{"id":127,"name":"Item G 2.2","link":"http://localhost:8080/UserList","isFavorite":false,"prefix":"fix_001"}]}

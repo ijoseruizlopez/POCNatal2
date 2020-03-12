@@ -1,0 +1,34 @@
+﻿<div  class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-danger" v-on:click="CallViewModel" >Invocar Otro View Model</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <nf-table id="myTable"
+                          v-bind:data="userSource"
+                          v-bind:mode="mode"
+                          v-bind:columns="configColumns"
+                          v-bind:select="select"
+                          v-bind:responsive="responsive"
+                          v-on:unselected-row="SelectedRow"
+                          v-on:selected-row="SelectedRow"
+                          ref="ABMtable">
+                    <div slot="toolbar">
+                        @await Html.PartialAsync("~/Views/Common/_BotoneraTable.cshtml")
+                    </div>
+                </nf-table>
+            </div>
+        </div>
+        
+        <nf-modal ref="modal" v-on:nf-modal-closed="CloseModal">
+            @await Html.PartialAsync("~/Views/Usuario/_Form.cshtml");
+        </nf-modal>
+        
+        <nf-modal ref="detailModal">
+            @await Html.PartialAsync("~/Views/Usuario/_Detail.cshtml");
+        </nf-modal>
+    </div>
+</div>

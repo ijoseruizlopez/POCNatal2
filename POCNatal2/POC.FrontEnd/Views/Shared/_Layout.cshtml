@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="https://natalfwk.gruposancorseguros.com/2.3.1/nf-pnet.min.css"/>
+</head>
+<body>
+    <script type="text/javascript" src="https://natalfwk.gruposancorseguros.com/2.3.1/nf.min.js"></script>
+    <header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader">
+        @Html.Partial("_MenuPartial.cshtml")
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+        @Html.Partial("_TransactionFail.cshtml")
+    </div>
+    <script src="~/scripts/Common/endpoints.js"></script>
+    <script src="~/scripts/Common/transactionFailBinding.js"></script>
+    <script src="~/scripts/Common/menuBinding.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

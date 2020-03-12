@@ -1,0 +1,29 @@
+﻿
+@section Scripts{
+    <script src="~/scripts/Common/endpoints.js"></script>
+    <script src="~/scripts/Provincia/configurations.js"></script>
+    <script src="~/scripts/Provincia/modalMixin.js"></script>
+    <script src="~/scripts/Provincia/crudMixin.js"></script>
+    <script src="~/scripts/Provincia/tableMixin.js"></script>
+    <script src="~/scripts/Provincia/listBinding.js"></script>
+}
+
+
+
+<br />
+
+<div id="provinciaTemplate">
+    <div class="container">
+        <div class="container">
+            @await Html.PartialAsync("~/Views/Common/_gridTemplate.cshtml")
+
+            <nf-modal ref="modal">
+                @await Html.PartialAsync("~/Views/Provincia/_formProvincia.cshtml")
+            </nf-modal>
+
+            <nf-modal ref="detailModal">
+                @await Html.PartialAsync("~/Views/Provincia/_detailProvincia.cshtml")
+            </nf-modal>
+        </div>
+    </div>
+</div>

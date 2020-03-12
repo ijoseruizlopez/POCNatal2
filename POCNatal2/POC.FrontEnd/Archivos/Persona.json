@@ -1,0 +1,9 @@
+{"Id":1,"Nombre":"CYMZLBHTZ1","Ciudad":{"Id":1,"Nombre":"Ciudad_11","Provincia":{"Id":1,"Nombre":"Provincia_11","Pais":{"Id":1,"Nombre":"Argentina"}}},"Perfil":{"Id":1,"Nombre":"Empresa","Descripcion":"","Activo":true}}
+{"Id":2,"Nombre":"EMAI6CW0W3","Ciudad":{"Id":1,"Nombre":"Ciudad_11","Provincia":{"Id":1,"Nombre":"Provincia_11","Pais":{"Id":1,"Nombre":"Argentina"}}},"Perfil":{"Id":2,"Nombre":"Asesor Laboral","Descripcion":"","Activo":true}}
+{"Id":3,"Nombre":"JDUT5YQ3L2","Ciudad":{"Id":2,"Nombre":"Ciudad_12","Provincia":{"Id":1,"Nombre":"Provincia_11","Pais":{"Id":1,"Nombre":"Argentina"}}},"Perfil":{"Id":3,"Nombre":"Estudio Jurídico","Descripcion":"","Activo":true}}
+{"Id":4,"Nombre":"LRXT186A6H","Ciudad":{"Id":2,"Nombre":"Ciudad_12","Provincia":{"Id":1,"Nombre":"Provincia_11","Pais":{"Id":1,"Nombre":"Argentina"}}},"Perfil":{"Id":4,"Nombre":"Prestador Médico","Descripcion":"","Activo":true}}
+{"Id":5,"Nombre":"X2Z7LFDZ4O","Ciudad":{"Id":3,"Nombre":"Ciudad_13","Provincia":{"Id":1,"Nombre":"Provincia_11","Pais":{"Id":1,"Nombre":"Argentina"}}},"Perfil":{"Id":5,"Nombre":"Empresa Afiliada ART","Descripcion":"","Activo":true}}
+{"Id":6,"Nombre":"ZB5C09D34X","Ciudad":{"Id":3,"Nombre":"Ciudad_13","Provincia":{"Id":1,"Nombre":"Provincia_11","Pais":{"Id":1,"Nombre":"Argentina"}}},"Perfil":{"Id":6,"Nombre":"Pruebas Varias","Descripcion":"Perfil de prueba para MENUES COMPLEX","Activo":true}}
+{"Id":7,"Nombre":"VNH6QXYQR7","Ciudad":{"Id":4,"Nombre":"Ciudad_14","Provincia":{"Id":1,"Nombre":"Provincia_11","Pais":{"Id":1,"Nombre":"Argentina"}}},"Perfil":{"Id":1,"Nombre":"Empresa","Descripcion":"","Activo":true}}
+{"Id":8,"Nombre":"GV3PFROXHZ","Ciudad":{"Id":4,"Nombre":"Ciudad_14","Provincia":{"Id":1,"Nombre":"Provincia_11","Pais":{"Id":1,"Nombre":"Argentina"}}},"Perfil":{"Id":2,"Nombre":"Asesor Laboral","Descripcion":"","Activo":true}}
+

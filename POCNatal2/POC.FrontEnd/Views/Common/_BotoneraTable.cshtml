@@ -1,0 +1,7 @@
+﻿
+<div class="row col-md-8" style="float:left" id="botonera">
+    <button  class="btn btn-primary" v-on:click="Nuevo" >Nuevo</button>
+    <button  class="btn btn-primary" v-on:click="Detalle" v-disable="!selection || selection.length === 0">Detalle</button>
+    <button  class="btn btn-primary" v-on:click="Editar" v-disable="!selection || selection.length === 0">Editar</button>
+    <button  class="btn btn-danger"  v-on:click="Eliminar" v-disable="!selection || selection.length === 0">Eliminar</button>
+</div>
